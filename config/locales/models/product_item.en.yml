@@ -1,0 +1,24 @@
+---
+en:
+  active_record:
+    models:
+      product_item: Product item
+    attributes:
+      product_item:
+        product_cate: Product cate
+        name: Name
+        system: System
+        update_date: Update date
+        source_size: Source size
+        source_dev: Source dev
+        iphone_url: Iphone url
+        iphone_ma: Iphone ma
+        android_url: Android url
+        android_ma: Android ma
+        description: Description
+        small_image_url: Small image url
+        big_image_url: Big image url
+    errors:
+      product_item: 
+  helpers:
+    product_item: 

@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  product_cate_id: 
+  name: MyString
+  system: MyString
+  update_date: 2013-08-30
+  source_size: MyString
+  source_dev: MyString
+  iphone_url: MyString
+  iphone_ma: MyString
+  android_url: MyString
+  android_ma: MyString
+  description: MyText
+  small_image_url: MyString
+  big_image_url: MyString
+
+two:
+  product_cate_id: 
+  name: MyString
+  system: MyString
+  update_date: 2013-08-30
+  source_size: MyString
+  source_dev: MyString
+  iphone_url: MyString
+  iphone_ma: MyString
+  android_url: MyString
+  android_ma: MyString
+  description: MyText
+  small_image_url: MyString
+  big_image_url: MyString

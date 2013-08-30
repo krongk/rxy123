@@ -1,0 +1,7 @@
+
+GMAIL_USERNAME: kenrome
+GMAIL_PASSWORD: inruby.com
+ADMIN_NAME: master
+ADMIN_EMAIL: master@inruby.com
+ADMIN_PASSWORD: kenrome
+ROLES: [admin, user, VIP]

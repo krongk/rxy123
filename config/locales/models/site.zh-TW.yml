@@ -1,0 +1,13 @@
+---
+zh-TW:
+  active_record:
+    models:
+      site: Site
+    attributes:
+      site:
+        name: Name
+        value: Value
+    errors:
+      site: 
+  helpers:
+    site: 

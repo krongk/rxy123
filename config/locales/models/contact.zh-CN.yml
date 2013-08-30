@@ -1,0 +1,15 @@
+---
+zh-CN:
+  active_record:
+    models:
+      contact: Contact
+    attributes:
+      contact:
+        name: Name
+        email: Email
+        phone: Phone
+        content: Content
+    errors:
+      contact: 
+  helpers:
+    contact: 

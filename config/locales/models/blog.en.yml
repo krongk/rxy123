@@ -1,0 +1,15 @@
+---
+en:
+  active_record:
+    models:
+      blog: Blog
+    attributes:
+      blog:
+        title: Title
+        body: Body
+        external_url: External url
+        image_url: Image url
+    errors:
+      blog: 
+  helpers:
+    blog: 

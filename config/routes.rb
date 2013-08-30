@@ -1,9 +1,34 @@
 Rxy123::Application.routes.draw do
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
+  resources :contacts
+
+  resources :blogs
+
+  resources :product_items
+
+  resources :product_cates
+
+  resources :resource_items
+
+  resources :sites
+
+  get "home/index" => "home#index"
+  get "home/about" => "home#about"
+  get "home/blog" => "home#blog"
+  get "home/blogpost" => "home#blogpost"
+  get "home/contact" => "home#contact"
+  get "home/features" => "home#features"
+  get "home/portfolio" => "home#portfolio"
+  get "home/portfolio_item" => "home#portfolio_item"
+  get "home/pricing" => "home#pricing"
+  get "home/services" => "home#services"
+  get "home/help" => "home#help"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  root :to => 'home#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

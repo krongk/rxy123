@@ -1,0 +1,51 @@
+<h1>Listing product_items</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Product cate</th>
+      <th>Name</th>
+      <th>System</th>
+      <th>Update date</th>
+      <th>Source size</th>
+      <th>Source dev</th>
+      <th>Iphone url</th>
+      <th>Iphone ma</th>
+      <th>Android url</th>
+      <th>Android ma</th>
+      <th>Description</th>
+      <th>Small image url</th>
+      <th>Big image url</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @product_items.each do |product_item| %>
+      <tr>
+        <td><%= product_item.product_cate %></td>
+        <td><%= product_item.name %></td>
+        <td><%= product_item.system %></td>
+        <td><%= product_item.update_date %></td>
+        <td><%= product_item.source_size %></td>
+        <td><%= product_item.source_dev %></td>
+        <td><%= product_item.iphone_url %></td>
+        <td><%= product_item.iphone_ma %></td>
+        <td><%= product_item.android_url %></td>
+        <td><%= product_item.android_ma %></td>
+        <td><%= product_item.description %></td>
+        <td><%= product_item.small_image_url %></td>
+        <td><%= product_item.big_image_url %></td>
+        <td><%= link_to 'Show', product_item %></td>
+        <td><%= link_to 'Edit', edit_product_item_path(product_item) %></td>
+        <td><%= link_to 'Destroy', product_item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Product item', new_product_item_path %>
